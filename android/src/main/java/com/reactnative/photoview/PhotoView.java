@@ -128,9 +128,9 @@ public class PhotoView extends PhotoDraweeView {
 
                 @Override
                 public void onFailure(String id, Throwable throwable) {
-                    eventDispatcher.dispatchEvent(
-                            new ImageEvent(getId(), ImageEvent.ON_ERROR)
-                    );
+                    // eventDispatcher.dispatchEvent(
+                    //         new ImageEvent(getId(), ImageEvent.ON_ERROR)
+                    // );
                     eventDispatcher.dispatchEvent(
                             new ImageEvent(getId(), ImageEvent.ON_LOAD_END)
                     );
